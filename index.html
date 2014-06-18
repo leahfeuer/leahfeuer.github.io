@@ -11,12 +11,13 @@
  var s = Snap();
  var bigCircle = s.circle(100, 100, 50);
 Snap.load("logo.svg", function (f) {
- 	f.selectAll("poylgon[fill='#010101']").attr({
- 		fill: "#bada55"
- 	});
- 	var g = f.select("g");
- 	s.append(g);
- 	g.drag();
+ 	f.selectAll("polygon[fill='#fff']").attr({fill: "#bada55"});
+    g = f.select("g");
+    s.append(g);
+    // Making croc draggable. Go ahead drag it around!
+    g.drag();
+    // Obviously drag could take event handlers too
+    // That’s better! selectAll for the rescue.
 
  });
 
