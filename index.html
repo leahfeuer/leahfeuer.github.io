@@ -11,11 +11,12 @@
  var s = Snap();
  var bigCircle = s.circle(100, 100, 50);
 Snap.load("logo.svg", function (f) {
- 	var g = f.select("g");
- 	f.select("poylgon[fill='#010101']").attr({
+ 	f.selectAll("poylgon[fill='#010101']").attr({
  		fill: "#bada55"
  	});
+ 	var g = f.select("g");
  	s.append(g);
+ 	g.drag();
 
  });
 
