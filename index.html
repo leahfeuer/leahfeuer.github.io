@@ -11,7 +11,6 @@
  var s = Snap();
  var bigCircle = s.circle(100, 100, 50);
 Snap.load("logo.svg", function (f) {
- 	f.selectAll("polygon[fill='#fff']").attr({fill: "#bada55"});
     g = f.select("g");
     s.append(g);
     // Making croc draggable. Go ahead drag it around!
