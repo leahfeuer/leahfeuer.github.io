@@ -19,21 +19,10 @@
     // Obviously drag could take event handlers too
      key.attr({fill: "#bada55"});
 
-    var myMatrix = new s.Matrix ();
-    myMatrix.scale(4,2);
-    myMatrix.rotate(45);
-
-    var myInvertedMatrix = myMatrix.invert();
-  
-
-    key.animate({transform: myMatrix}, 3000, mina.bounce, function () {
-    	key.animate ({transform: myInvertedMatrix}, 3000, mina.bounce)
-    });
-
-   
+  //key.animate()
 
  });
-
+bigCircle.animate({r:200}, 1000);
 
 
 
