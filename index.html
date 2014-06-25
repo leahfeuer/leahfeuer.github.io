@@ -10,9 +10,9 @@
 
  var s = Snap();
  //var bigCircle = s.circle(100, 100, 50);
- Snap.load("logo002.svg", function (f) {
+ Snap.load("logo.svg", function (f) {
     var g = f.select("g");
-    var key = f.select("#_x30_02");
+    var key = f.select("#keyhandle");
 
     var anim1=function() {
     key.animate({transform: "scale(1,0,.5,.5)"},500, mina.linear, anim2);
