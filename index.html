@@ -12,10 +12,13 @@
  //var bigCircle = s.circle(100, 100, 50);
  Snap.load("logo002.svg", function (f) {
     var g = f.select("g");
+    var key = f.select("#_x30_02");
+    key.attr({fill: "#bada55"});
     //var key = f.select("#key")
     s.append(f);
+
     // Making croc draggable. Go ahead drag it around!
-    g.drag();
+    //g.drag();
     // Obviously drag could take event handlers too
     // key.attr({fill: "#bada55"});
 
