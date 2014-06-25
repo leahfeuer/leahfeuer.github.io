@@ -9,7 +9,7 @@
 <script>
 
  var s = Snap();
- //var bigCircle = s.circle(100, 100, 50);
+
  Snap.load("logo.svg", function (f) {
     var g = f.select("g");
     var key = f.select("#keyhandle");
@@ -21,26 +21,15 @@
     var anim2= function() {
     key.animate ({transform: "matrix(1,1,.5,.5"},500, mina.linear, anim1);
     }
-    //var key = f.select("#key")
+
     s.append(f);
     anim1();
 
-    // Making croc draggable. Go ahead drag it around!
-    //g.drag();
-    // Obviously drag could take event handlers too
-    // key.attr({fill: "#bada55"});
-
-  //key.animate()
+  
 
  });
-//bigCircle.animate({r:200}, 1000);
-//bigCirle.hover()
+
 var c = paper.path("M10 10L90 90");
-
-
-
-
-
 </script>
 </body>
 </html>
